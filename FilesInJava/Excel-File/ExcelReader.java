@@ -9,7 +9,7 @@ public class ExcelReader {
 
             FileInputStream fis = new FileInputStream(excelFilePath);
             System.out.println(fis);
-        } catch (Exception e) {
+        } catch (IOException e) {
             System.out.println(e);
         }
 
