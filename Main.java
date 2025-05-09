@@ -1,6 +1,8 @@
 import java.util.Scanner;
 
 class Main {
+
+    // Simple Calculator
     public static void calculator() {
         Scanner myObj = new Scanner(System.in);
 
@@ -35,23 +37,65 @@ class Main {
         }
     }
 
+
     // Function for calculating distance
     public static void distance() {
         Scanner myObj = new Scanner(System.in);
 
+        System.out.println("Enter x1");
         double X1 = myObj.nextDouble();
+        System.out.println("Enter x2");
         double X2 = myObj.nextDouble();
+        System.out.println("Enter y1");
         double Y1 = myObj.nextDouble();
+        System.out.println("Enter y2");
         double Y2 = myObj.nextDouble();
 
-        double d = Math.sqrt(((Y2-Y1)*(Y2-Y1))+((X2-X1)*(X2-X1)));
+        double d = Math.sqrt(((Y2 - Y1) * (Y2 - Y1)) + ((X2 - X1) * (X2 - X1)));
 
-        System.out.println(d);
+        System.out.println("Distance is " + d);
+    }
+
+
+    // Function for adding two fractions
+    public static void FracAdd() {
+        Scanner myObj = new Scanner(System.in);
+
+        System.out.println("Enter fraction 1");
+        String frac1 = myObj.nextLine();
+
+        while (!(frac1.contains("/"))) {
+            System.out.println("Again Enter fraction 1");
+            frac1 = myObj.nextLine();
+        }
+
+        int num1 = Integer.parseInt(frac1.split("/")[0]);
+        int den1 = Integer.parseInt(frac1.split("/")[1]);
+
+
+        System.out.println("Enter fraction 2");
+        String frac2 = myObj.nextLine();
+        
+        while (!(frac2.contains("/"))) {
+            System.out.println("Again Enter fraction 2");
+            frac2 = myObj.nextLine();
+        }
+
+        int num2 = Integer.parseInt(frac2.split("/")[0]);
+        int den2 = Integer.parseInt(frac2.split("/")[1]);
+
+
+        double ansNum = ((num1*den2) + (den1* num2));
+        double ansden = (den1*den2);
+
+        System.out.println("Answer is "+ ansNum + "/" + ansden);
     }
 
     public static void main(String[] args) {
         // calculator();
 
-        distance();
+        // distance();
+
+        FracAdd();
     }
 }
