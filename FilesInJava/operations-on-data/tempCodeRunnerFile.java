@@ -1,0 +1,1 @@
+fields2[1] + "-" + products.get(i)
