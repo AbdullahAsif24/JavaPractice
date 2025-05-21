@@ -1,3 +1,3 @@
-int i = 0; i < array.length; i++) {
-                System.out.println(array[i]);
-            }
+[i];
+        array[i] = smallest;
+        array[pos] = t
