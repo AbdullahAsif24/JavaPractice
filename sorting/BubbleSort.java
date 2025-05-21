@@ -1,3 +1,4 @@
+package sorting;
 public class BubbleSort {
     public static void main(String[] args) {
         int[] array = {23,8,51,89,90,5,3,7,125};
