@@ -91,11 +91,33 @@ class Main {
         System.out.println("Answer is "+ ansNum + "/" + ansden);
     }
 
+    // function to do matrix multiplication
+    public static void MulMatrices(){
+        int[][] mat1 = {{2,3,4},{4,5,9}};
+        int[][] mat2 = {{6,7,10},{8,9,5}};
+        int[][] result = new int[mat1.length][mat2[0].length];
+        int sum = 0;
+
+        for (int i = 0; i < result.length; i++) {
+            for (int j = 0; j < mat1[0].length; j++) {
+                sum += mat1[0][j] * mat2[j][0];
+                result[i][j] = sum; 
+            }
+        }
+        for (int i = 0; i < result.length; i++) {
+            for (int j = 0; j < result.length; j++) {
+                System.out.println(result[i][j]);
+            }
+        }
+    }
+
     public static void main(String[] args) {
         // calculator();
 
         // distance();
 
-        FracAdd();
+        // FracAdd();
+
+        MulMatrices();
     }
 }
