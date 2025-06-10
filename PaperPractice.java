@@ -105,20 +105,22 @@ public class PaperPractice {
 
         // -------------------------------------------------------------------------- //
         
-
-
-
-
+        
         
 
+        
+        
+        
         //Write a Java program that takes a time input in 24-hour format (e.g., "14:30") and a GMT offset (e.g., +5, -3, etc.), and then converts the input time to the corresponding time in that GMT offset.
-
+        
         //Instructions:
-              //You may use Scanner to take two inputs: the time string and the offset.
+        //You may use Scanner to take two inputs: the time string and the offset.
               //Split the time into hours and minutes using string manipulation.
               //Perform integer arithmetic to apply the GMT offset.
               //Format the final time in HH:MM format, ensuring leading zeros if needed (e.g., 09:05).
-        
+              
+              /* 
+
         Scanner sc = new Scanner(System.in);
 
         // Step 1: Input
@@ -131,17 +133,41 @@ public class PaperPractice {
         String[] parts = time.split(":");
         int hour = Integer.parseInt(parts[0]);
         int minute = Integer.parseInt(parts[1]);
-
+        
         // Step 3: Add offset
         int newHour = (hour + offset) % 24;
         // Step 4: Handle negative hours (wrap around)
         if (newHour < 0) {
-            newHour += 24;
-        }
+          newHour += 24;
+          }
 
         // Step 5: Format and print
         System.out.printf("Local Time: %02d:%02d\n", hour, minute);
         System.out.printf("GMT%+d Time: %02d:%02d\n", offset, newHour, minute);
+        
+        */
+        
+
+        
+        // -------------------------------------------------------------------------- //
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
       
