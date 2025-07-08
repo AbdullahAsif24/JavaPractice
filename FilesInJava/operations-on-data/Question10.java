@@ -18,6 +18,7 @@ public class Question10 {
             String[] fields;
             int qty = 0;
 
+            //  Scanner fileToRead = new Scanner(new File("E:\\UBIT\\programming fundamentals 1st sem\\java\\JavaPractice\\FilesInJava\\operations-on-data\\sampleForQuizExam.txt"));
             File myFile = new File(myFilePath);
             Scanner fileToRead = new Scanner(myFile);
 
@@ -29,6 +30,8 @@ public class Question10 {
                     qty += Integer.parseInt(fields[3]);
                 }
             }
+
+            
 
             System.out.println(qty);
         } catch (Exception e) {

@@ -22,7 +22,7 @@ public class PaperPractice {
     // }
     // }
     // }
-    // System.out.println("Comment number is " + resultArr[0]);
+    // System.out.println("commen number is " + resultArr[0]);
 
     // ----------------------------------------------------------------------------------
     // //
